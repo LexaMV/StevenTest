@@ -14,7 +14,7 @@ public class InstanceSheep : MonoBehaviour
      public GameObject sheepPrefab;
 
     public void CreateSheep(){
-    float x = Random.Range(borderLeft.position.x+0.25f, borderRight.position.x-0.25f);
+    float x = Random.Range(borderLeft.position.x+1f, borderRight.position.x-1f);
     float y = Random.Range(createButton.position.x, borderBottom.position.x);
     Instantiate(sheepPrefab, new Vector2(x,y), Quaternion.identity);
     }
